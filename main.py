@@ -67,7 +67,7 @@ def tag(message: Message, name, number):
 def descr(message: Message, name, number, date):
     chat_id = message.chat.id
     tgtag = message.text
-    msg = bot.send_message("❓ <b>Вопрос №4</b>"
+    msg = bot.send_message(chat_id, "❓ <b>Вопрос №4</b>"
                                   "\n🆔 Какое описание будет у вашего профиля?</b>")
     desc = message.text
 
